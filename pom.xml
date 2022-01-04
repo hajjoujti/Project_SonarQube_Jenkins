@@ -9,7 +9,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.java.pmd.reportPaths>./target/pmd.xml</sonar.java.pmd.reportPaths>
-        <sonar.java.checkstyle.reportPaths>./target/checkstyleresult.xml</sonar.java.checkstyle.reportPaths>
+        <sonar.java.checkstyle.reportPaths>./target/checkstyle-result.xml</sonar.java.checkstyle.reportPaths>
     </properties>
     <build>
         <plugins>
