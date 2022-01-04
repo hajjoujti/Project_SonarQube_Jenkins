@@ -3,6 +3,7 @@ package com.formation.bank;
 public class SimpleInterestCalculator2 implements InterestCalculator {
 
     private double rate;
+    public String ratename;
 
     @Override
     public void setRate(double rate) {
@@ -12,8 +13,11 @@ public class SimpleInterestCalculator2 implements InterestCalculator {
     @Override
     public double calculate(double amount, double year) {
         if(amount < 0 || year < 0) {
-            throw new IllegalArgumentException("Le monmtant et la duree doivent etre positifs");
+            throw new IllegalArgumentException(
+                    "Le monmtant et la duree doivent etre positifs");
         }
+
+
         return amount * year * rate;
     }
 
